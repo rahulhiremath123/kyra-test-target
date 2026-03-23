@@ -1,0 +1,12 @@
+name: Security Scan
+on: [push]
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run KYRA
+        uses: rahulhiremath15/kyra/.github/actions/kyra-scan@main
+        with:
+          path: .
+          fail-on-risk: high
