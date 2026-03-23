@@ -9,4 +9,4 @@ jobs:
         uses: rahulhiremath15/kyra/.github/actions/kyra-scan@main
         with:
           path: .
-          fail-on-risk: medium
+          fail-on-risk: low
